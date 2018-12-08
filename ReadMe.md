@@ -35,6 +35,7 @@ Another way of solving this problem could be by broadening the observation-space
 Epochs = 30000, Replacement-Interval = 2, γ = 0.92, Exploration = 20%, Learning-Rate = 0.00025
 Unstable and performs poorly after there is no exploration or a high rewardmean is reached.
 Reducing the update interval(to 5-1) helps but is pointless.
+Can be solved by using a Learning-Rate scheduler.
 
 <p float="left">
   <img src="./Plots/CartPole-TQ/meanreward.png" width="425" />
@@ -52,7 +53,6 @@ Reducing the update interval(to 5-1) helps but is pointless.
 ## Q-Learning(Fixed Targets, Memory)
 Epochs = 30000, Replacement-Interval = 150, γ = 0.99, Exploration = 6%, Learning-Rate = 0.00025, Memorysize = 500, Batchsize = 8, Warmup-Steps = 150
 Unstable and performs poorly after there is no exploration or a high rewardmean is reached.
-Can be solve by using a Learning-Rate scheduler.
 
 <p float="left">
   <img src="./Plots/CartPole-TMQ/meanreward.png" width="425" />
