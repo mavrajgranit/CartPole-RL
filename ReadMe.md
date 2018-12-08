@@ -2,10 +2,10 @@
 Aims to solve CartPole with various RL-Techniques at an intermediate level.
 
 ## Deterministic
-- [X] Q-Tables
-- [X] Deep Q Learning(Fixed Targets, Memory, Double-Q)
-- [ ] Policy Gradient
-- [ ] Actor Critic
+- [X] [ Q-Tables ](#qtables)
+- [X] [ Deep Q Learning(Fixed Targets, Memory, Double-Q) ](#qlearning)
+- [X] [ Policy Gradient ](#policygradient)
+- [ ] [ Actor Critic ](#actorcritic)
 
 Deep Q-Learning techniques will be mixed and tested.
 
@@ -13,6 +13,7 @@ Deep Q-Learning techniques will be mixed and tested.
 X-Axis = Epochs/100
 Q = Standard Q-Learning, T = Fixed Targets, M = Memory, DQ = Double-Q
 
+<a name="qtables"></a>
 ## Q-Tables - Input Discretized
 Since discretization leads to reduced accuracy this problem cant be completely solved.
 Finding a sweetspot between accuracy-tradeoff and value-conservation might lead to a solution.
@@ -24,6 +25,7 @@ Another way of solving this problem could be by broadening the observation-space
   <img src="./Plots/CartPole-QTable/meanqvalue.png" width="425" />
 </p>
 
+<a name="qlearning"></a>
 ## Q-Learning
 <p float="left">
   <img src="./Plots/CartPole-Q/meanreward.png" width="425" />
@@ -74,12 +76,21 @@ Can be solve by using a Learning-Rate scheduler.
   <img src="./Plots/CartPole-MDQ/meanqvalue.png" width="425" />
 </p>
 
+<a name="policygradient"></a>
 ## PolicyGradient
 <p float="left">
   <img src="./Plots/PolicyGradient/meanreward.png" width="425" />
   <img src="./Plots/PolicyGradient/meanloss.png" width="425" /> 
 </p>
 
+### Normalized Discounted Rewards(also smaller Network and higher Learning Rate)
+
+<p float="left">  
+  <img src="./Plots/PolicyGradient/normmeanreward.png" width="425" />
+  <img src="./Plots/PolicyGradient/normmeanloss.png" width="425" /> 
+</p>
+
+<a name="actorcritic"></a>
 ## Actor Critic
 <p float="left">
   <img src="./Plots/AC/meanreward.png" width="425" />
