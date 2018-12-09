@@ -1,7 +1,7 @@
 # CartPole - Reinforcement Learning
 Aims to solve CartPole with various RL-Techniques at an intermediate level.
 
-## Deterministic
+## Techniques
 - [X] [ Q-Tables ](#qtables)
 - [X] [ Deep Q Learning(Fixed Targets, Memory, Double-Q) ](#qlearning)
 - [X] [ Policy Gradient ](#policygradient)
