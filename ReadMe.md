@@ -1,11 +1,11 @@
 # CartPole - Reinforcement Learning
 Aims to solve CartPole with various RL-Techniques at an intermediate level.
 
-## Deterministic
+## Implementations
 - [X] [ Q-Tables ](#qtables)
 - [X] [ Deep Q Learning(Fixed Targets, Memory, Double-Q) ](#qlearning)
 - [X] [ Policy Gradient ](#policygradient)
-- [ ] [ Actor Critic ](#actorcritic)
+- [X] [ Actor Critic ](#actorcritic)
 
 Deep Q-Learning techniques will be mixed and tested.
 
@@ -93,6 +93,9 @@ Unstable and performs poorly after there is no exploration or a high rewardmean 
 <a name="actorcritic"></a>
 ## Actor Critic
 <p float="left">
-  <img src="./Plots/AC/meanreward.png" width="425" />
-  <img src="./Plots/AC/meanloss.png" width="425" /> 
+  <img src="./Plots/ActorCritic/meanreward.png" width="425" />
+  <img src="./Plots/ActorCritic/actormeanloss.png" width="425" />
+  <img src="./Plots/ActorCritic/criticmeanloss.png" width="425" /> 
+  <img src="./Plots/ActorCritic/meanq.png" width="425" /> 
+  <img src="./Plots/ActorCritic/meantd.png" width="425" /> 
 </p>
