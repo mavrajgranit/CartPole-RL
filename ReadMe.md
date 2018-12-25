@@ -84,7 +84,6 @@ Unstable and performs poorly after there is no exploration or a high rewardmean 
 </p>
 
 ### Normalized Discounted Rewards(also smaller Network and higher Learning Rate)
-
 <p float="left">  
   <img src="./Plots/PolicyGradient/normmeanreward.png" width="425" />
   <img src="./Plots/PolicyGradient/normmeanloss.png" width="425" /> 
