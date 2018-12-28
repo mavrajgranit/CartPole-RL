@@ -91,6 +91,7 @@ Unstable and performs poorly after there is no exploration or a high rewardmean 
 
 <a name="actorcritic"></a>
 ## Actor Critic
+Actually A2C since the advantage function is used to update the Actor. Q(s,a) = A(s,a) + V(s) -> A(s,a) = Q(s,a) - V(s) -> A(s,a) = r+γV(s) - V(s)
 <p float="left">
   <img src="./Plots/ActorCritic/meanreward.png" width="425" />
   <img src="./Plots/ActorCritic/actormeanloss.png" width="425" />
