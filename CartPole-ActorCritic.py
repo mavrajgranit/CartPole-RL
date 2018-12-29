@@ -92,10 +92,6 @@ for e in range(epochs):
             criticloss = (q - target) ** 2
             cl += criticloss.item()
 
-            #Simply using the qvalue defeats the purpose since all values will be positiv and we won't be able to account everestimations
-            #It should still be possible this way but seems to fail. Possibly because q-values need a very long time to predict the correct values unlike having those ready
-            #I read only that the td-error is used instead. Working way better but raising questions like: What happens if the critic learns the values faster?,...
-            #Training happens more slowly since the td error tends to zero
             actorloss = td.item() * log * -1
             al += actorloss.item()
             loss = criticloss+actorloss
